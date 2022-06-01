@@ -57,36 +57,6 @@
 
                                         <div class="form-group col-6">
                                             <div class="form-group">
-                                                <label for="nisn">NISN</label>
-                                                <input id="nisn" type="text" name="nisn"
-                                                    value="{{ old('nisn') }}"
-                                                    class="form-control @error('nisn') is-invalid @enderror"
-                                                    placeholder="Masukkan NISN" autofocus>
-                                                @error('nisn')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group col-6">
-                                            <div class="form-group">
-                                                <label for="foto">Foto Diri</label>
-                                                <input id="foto" type="file" name="foto"
-                                                    value="{{ old('foto') }}"
-                                                    class="form-control @error('foto') is-invalid @enderror"
-                                                    placeholder="Masukkan Foto Diri" autofocus>
-                                                @error('foto')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                @enderror
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group col-6">
-                                            <div class="form-group">
                                                 <label for="email">Email</label>
                                                 <input id="email" type="email" class="form-control" name="email"
                                                     value="{{ old('email') }}"
