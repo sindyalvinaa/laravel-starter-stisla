@@ -17,6 +17,7 @@ class KategoriSeeder extends Seeder
         DB::table('kategoris')->insert([
             'id' => '1',
             'kategori' => 'Kriminal',
+            'keterangan' => 'Kriminal',
         ]);
     }
 }

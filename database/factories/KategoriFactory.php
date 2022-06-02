@@ -24,6 +24,7 @@ class KategoriFactory extends Factory
         return [
             'id' => $this->faker->id(),
             'kategori' => $this->faker->kategori(),
+            'keterangan' => $this->faker->keterangan()
         ];
     }
 
