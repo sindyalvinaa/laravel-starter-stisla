@@ -4,6 +4,7 @@ use App\Http\Controllers\DemoController;
 use App\Http\Controllers\Menu\MenuGroupController;
 use App\Http\Controllers\Menu\MenuItemController;
 use App\Http\Controllers\PengacaraController;
+use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
@@ -15,6 +16,7 @@ use App\Http\Controllers\RoleAndPermission\RoleController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Models\Pengacara;
+use App\Models\Kategori;
 use App\Http\Controllers\UserController;
 
 /*
@@ -75,4 +77,5 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::put('assign-user/{user}', [AssignUserToRoleController::class, 'update'])->name('assign.user.update');
     });
     Route::get('/pengacara',[PengacaraController::class, 'pengacara'])->name('pengacara');
+    Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
 });
