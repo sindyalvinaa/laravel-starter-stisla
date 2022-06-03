@@ -17,7 +17,7 @@ class PengacaraSeeder extends Seeder
         DB::table('pengacaras')->insert([
             'foto' => 'foto',
             'nama_pengacara' => 'Witan',
-            'kategori' => '2',
+            'kategori' => 'hukum',
             'profil' => 'kehfisdifja;ifue',
         ]);
     }

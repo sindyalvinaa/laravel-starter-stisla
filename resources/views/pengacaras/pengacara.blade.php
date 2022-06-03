@@ -2,31 +2,15 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>Table Kost</h1>
+            <h1>Table Pengacara</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                 <div class="breadcrumb-item"><a href="#">Components</a></div>
                 <div class="breadcrumb-item">Table</div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Title</h4>
-                    </div>
-                    <div class="card-body"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header"></div>
-                    <div class="card-body"></div>
-                </div>
-            </div>
-        </div>
         <div class="section-body">
-            <a href="/tambahkost" class="btn btn-success mb-3">Tambah Data Pengacara</a>
+            <a href="/tambahpengacara" class="btn btn-success mb-3">Tambah Data Pengacara</a>
             <div class="row">
                 <div class="col-12">
                     @include('layouts.alert')
@@ -41,20 +25,28 @@
                         <th class="text-center">Nama</th>
                         <th class="text-center">Kategori</th>
                         <th class="text-center">Profil</th>
+                        <th class="text-center">Dibuat</th>
                         <th class="text-center">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
+                        @foreach ($data as $row)
                         <tr>
-                            <th scope="row">1</th>
-                            <td></td>
-                            <td>Muso</td>
-                            <td>1</td>
-                            <td>uydoaiydisycishcfidhdj</td>
-                            <td>
-                                <button type="button" class="btn btn-info">Edit</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
+                            <th scope="row">{{ $row->id }}</th>
+                            <td class="text-center">
+                                <img src="{{ asset('assets/img/'.$row->foto) }}" alt="" class="img-fluid w-75 " class="mb-3 mt-3 ">
                             </td>
+                            <td class="text-center">{{ $row->nama_pengacara }}</td>
+                            <td class="text-center">{{$row->kategori}}</td>
+                            <td class="text-center">{{$row->profil}}</td>
+                            <td class="text-center">{{$row->created_at}}</td>
+                            <td class="text-center">
+                                <a href="/tampildata/{{ $row->id }}" class="btn btn-primary d-flex justify-content-center">Edit</a>
+                                <a href="/hapusdata/{{ $row->id }}" class="btn btn-danger d-flex justify-content-center">Delete</a>
+                            </td>
+                        </tr>
+                        @endforeach
+
               </table>
         </div>
     </section>
