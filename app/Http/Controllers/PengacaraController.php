@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 
 class PengacaraController extends Controller
 {
-    public function pengacara(){
-        $data = Pengacara::all();
+    public function pengacara(Request $request){
+        if($request->has('search')){
+            $data = Pengacara::where('kategori', 'LIKE', '%' .$request->search.'%')->paginate(5);
+        }else{
+            $data = Pengacara::paginate(5);
+        }
+
+        $data = Pengacara::paginate(5);
         return view('pengacaras.pengacara' ,compact('data'));
     }
 

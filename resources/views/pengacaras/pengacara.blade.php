@@ -10,7 +10,15 @@
             </div>
         </div>
         <div class="section-body">
-            <a href="/tambahpengacara" class="btn btn-success mb-3">Tambah Data Pengacara</a>
+            <a href="/tambahpengacara" class="btn btn-success mb-2">Tambah Data Pengacara</a>
+
+            <div class="row g-3 align-items-center mt-1 mb-2">
+                <div class="col-auto">
+                    <form action="/pengacara" method="GET">
+                    <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelp">
+                </form>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     @include('layouts.alert')
@@ -33,9 +41,9 @@
                         @php
                             $no = 1;
                         @endphp
-                        @foreach ($data as $row)
+                        @foreach ($data as $index => $row)
                         <tr>
-                            <th scope="row">{{ $no++ }}</th>
+                            <th scope="row">{{ $index + $data->firstItem() }}</th>
                             <td class="text-center">
                                 <img src="{{ asset('assets/img/'.$row->foto) }}" alt="" class="img-fluid w-75 " class="mb-3 mt-3 ">
                             </td>
@@ -51,8 +59,9 @@
                             </td>
                         </tr>
                         @endforeach
-
+                    </tbody>
               </table>
+              {{ $data->links() }}
         </div>
     </section>
 @endsection
