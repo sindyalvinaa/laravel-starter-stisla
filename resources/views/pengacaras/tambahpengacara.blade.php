@@ -22,8 +22,13 @@
                                 </div>
                                   <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                                    <input type="text" name="kategori" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                    <select name="kategori" class="form-control" id="exampleInputKategori">
+                                        @foreach ($kategori as $item)
+                                        <option value="{{ $item->kategori }}">{{$item->kategori}} </option>
+                                        @endforeach
+                                    </select>
+                                    {{-- <input type="text" name="kategori" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"> --}}
                                   </div>
                                   <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Profil Pengacara</label>
