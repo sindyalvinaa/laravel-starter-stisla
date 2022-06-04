@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Kategori;
-
+use App\Models\Pengacara;
 use Illuminate\Http\Request;
 
 class KategoriController extends Controller
