@@ -87,5 +87,10 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
 
     Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
-
+    Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
+    Route::get('/tambahkategori',[KategoriController::class, 'tambahkategori'])->name('tambahkategori');
+    Route::get('/tampilKategori/{id}',[KategoriController::class, 'tampilKategori'])->name('tampilKategori');
+    Route::post('/insertKategori',[KategoriController::class, 'insertKategori'])->name('insertKategori');
+    Route::post('/updateKategori/{id}',[KategoriController::class, 'updateKategori'])->name('updateKategori');
+    Route::get('/delete/{id}',[KategoriController::class, 'delete'])->name('delete');
 });
