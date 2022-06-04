@@ -87,10 +87,13 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
 
     Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
-    Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
-    Route::get('/tambahKategori',[KategoriController::class, 'tambahKategori'])->name('tambahKategori');
-    Route::get('/tampilKategori/{id}',[KategoriController::class, 'tampilKategori'])->name('tampilKategori');
-    Route::post('/insertKategori',[KategoriController::class, 'insertKategori'])->name('insertKategori');
-    Route::post('/updateKategori/{id}',[KategoriController::class, 'updateKategori'])->name('updateKategori');
-    Route::get('/delete/{id}',[KategoriController::class, 'delete'])->name('delete');
+    
+    Route::prefix('Kategori-Management')-> group(function() {
+        Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
+        Route::get('/tambahKategori',[KategoriController::class, 'tambahKategori'])->name('tambahKategori');
+        Route::get('/tampilKategori/{id}',[KategoriController::class, 'tampilKategori'])->name('tampilKategori');
+        Route::post('/insertKategori',[KategoriController::class, 'insertKategori'])->name('insertKategori');
+        Route::post('/updateKategori/{id}',[KategoriController::class, 'updateKategori'])->name('updateKategori');
+        Route::get('/delete/{id}',[KategoriController::class, 'delete'])->name('delete');
+    });
 });
