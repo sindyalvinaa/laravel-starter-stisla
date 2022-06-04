@@ -40,15 +40,25 @@
                         <th class="text-center">Id</th>
                         <th class="text-center">Kategori</th>
                         <th class="text-center">Keterangan</th>
+                        <th class="text-center">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
+                        @php
+                            $no = 1;
+                        @endphp
+                        @foreach ($data as $index => $row)
                         <tr>
                             <th scope="row">1</th>
+                            <td class="text-center">{{ $row->id }}</td>
+                            <td class="text-center">{{ $row->kategori }}</td>
+                            <td class="text-center">{{ $row->keterangan }}</td>
                             <td>
                                 <button type="button" class="btn btn-info">Edit</button>
                                 <button type="button" class="btn btn-danger">Hapus</button>
                             </td>
+                        </tr>
+                        @endforeach
               </table>
         </div>
     </section>
