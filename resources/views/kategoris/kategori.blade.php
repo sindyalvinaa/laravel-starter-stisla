@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="section-body">
-            <a href="/tambahkost" class="btn btn-success mb-3">Tambah Data Kategori</a>
+            <a href="/tambahKategori" class="btn btn-success mb-3">Tambah Data Kategori</a>
             <div class="row">
                 <div class="col-12">
                     @include('layouts.alert')
@@ -49,13 +49,13 @@
                         @endphp
                         @foreach ($data as $index => $row)
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row">{{ $index + $data->firstItem() }}</th>
                             <td class="text-center">{{ $row->id }}</td>
                             <td class="text-center">{{ $row->kategori }}</td>
                             <td class="text-center">{{ $row->keterangan }}</td>
                             <td>
-                                <button type="button" class="btn btn-info">Edit</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
+                                <a href="/tampilKategori/{{ $row->id }}" class="btn btn-primary d-flex justify-content-center">Edit</a>
+                                <a href="/delete/{{ $row->id }}" class="btn btn-danger d-flex justify-content-center">Delete</a>
                             </td>
                         </tr>
                         @endforeach

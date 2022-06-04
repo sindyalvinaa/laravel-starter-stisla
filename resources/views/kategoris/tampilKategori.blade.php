@@ -9,7 +9,7 @@
                     <div class="col-8">
                     <div class="card">
                         <div class="card-body">
-                            <form action="/updatekategori/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                            <form action="/updateKategori/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
 
                                 <div class="mb-3">
