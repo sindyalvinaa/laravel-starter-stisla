@@ -9,7 +9,7 @@
                     <div class="col-8">
                     <div class="card">
                         <div class="card-body">
-                            <form action="/insertKategori" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('insertKategori')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Masukkan Kategori</label>

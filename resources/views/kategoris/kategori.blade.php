@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="section-body">
-            <a href="/tambahKategori" class="btn btn-success mb-3">Tambah Data Kategori</a>
+            <a href="{{ route('tambahKategori') }}" class="btn btn-success mb-3">Tambah Data Kategori</a>
             <div class="row">
                 <div class="col-12">
                     @include('layouts.alert')
