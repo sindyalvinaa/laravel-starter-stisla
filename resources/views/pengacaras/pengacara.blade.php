@@ -30,9 +30,12 @@
                       </tr>
                     </thead>
                     <tbody>
+                        @php
+                            $no = 1;
+                        @endphp
                         @foreach ($data as $row)
                         <tr>
-                            <th scope="row">{{ $row->id }}</th>
+                            <th scope="row">{{ $no++ }}</th>
                             <td class="text-center">
                                 <img src="{{ asset('assets/img/'.$row->foto) }}" alt="" class="img-fluid w-75 " class="mb-3 mt-3 ">
                             </td>
@@ -42,7 +45,9 @@
                             <td class="text-center">{{$row->created_at}}</td>
                             <td class="text-center">
                                 <a href="/tampildata/{{ $row->id }}" class="btn btn-primary d-flex justify-content-center">Edit</a>
-                                <a href="/hapusdata/{{ $row->id }}" class="btn btn-danger d-flex justify-content-center">Delete</a>
+                                <a href="/delete/{{ $row->id }}" class="btn btn-danger d-flex justify-content-center">Delete</a>
+                                <button type="button" class="btn btn-warning d-flex justify-content-center">Detail</button>
+
                             </td>
                         </tr>
                         @endforeach
