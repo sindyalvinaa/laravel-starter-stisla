@@ -86,4 +86,6 @@ Route::group(['middleware' => ['auth','verified']], function () {
 
     Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
 
+    Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
+
 });
