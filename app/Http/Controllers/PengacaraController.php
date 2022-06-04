@@ -41,4 +41,10 @@ class PengacaraController extends Controller
         }
         return redirect()->route('pengacara')->with('success', 'Data Pengacara Berhasil Di Update');
     }
+
+    public function delete($id){
+        $data = Pengacara::find($id);
+        $data->delete();
+        return redirect()->route('pengacara')->with('success', 'Data Pengacara Berhasil Di Hapus');
+    }
 }
