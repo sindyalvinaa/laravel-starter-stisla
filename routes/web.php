@@ -88,7 +88,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
 
     Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
     Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
-    Route::get('/tambahkategori',[KategoriController::class, 'tambahkategori'])->name('tambahkategori');
+    Route::get('/tambahKategori',[KategoriController::class, 'tambahKategori'])->name('tambahKategori');
     Route::get('/tampilKategori/{id}',[KategoriController::class, 'tampilKategori'])->name('tampilKategori');
     Route::post('/insertKategori',[KategoriController::class, 'insertKategori'])->name('insertKategori');
     Route::post('/updateKategori/{id}',[KategoriController::class, 'updateKategori'])->name('updateKategori');
