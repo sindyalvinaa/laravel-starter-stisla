@@ -77,4 +77,13 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::put('assign-user/{user}', [AssignUserToRoleController::class, 'update'])->name('assign.user.update');
     });
     Route::get('/pengacara',[PengacaraController::class, 'pengacara'])->name('pengacara');
+
+    Route::get('/tambahpengacara',[PengacaraController::class, 'tambahpengacara'])->name('tambahpengacara');
+
+    Route::post('/insertpengacara',[PengacaraController::class, 'insertpengacara'])->name('insertpengacara');
+
+    Route::get('/tampildata/{id}',[PengacaraController::class, 'tampildata'])->name('tampildata');
+
+    Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
+
 });
