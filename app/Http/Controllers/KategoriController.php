@@ -8,10 +8,11 @@ use Illuminate\Http\Request;
 class KategoriController extends Controller
 {
     public function kategori(){
-        return view('kategoris.kategori');
+        $data = Kategori::paginate(5);
+        return view('kategoris.kategori',compact('data'));
     }
-    public function tambahkategori(){
-        return view('kategoris.tambahkategori');
+    public function tambahKategori(){
+        return view('kategoris.tambahKategori');
     }
     public function tampilKategori($id){
         $data = Kategori::find($id);
