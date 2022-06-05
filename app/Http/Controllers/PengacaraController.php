@@ -25,18 +25,13 @@ class PengacaraController extends Controller
     }
 
     public function insertpengacara(Request $request){
-
-        Pengacara::create($request->all());
-
+        $data = Pengacara::create($request->all());
         if($request->hasFile('foto'))
         {
-            $file = $request->file('foto');
-            $extension = $file->getClientOriginalExtension();
-            $filename = time() . '.' . $extension;
-            $file->move('img/uploads', $filename);
-            $pengacara->foto = $filename;
+            $request->file('foto')->move('assets/img/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
         }
-
         return redirect()->route('pengacara')->with('success', 'Data Pengacara Berhasil Di Tambahkan');
     }
 
