@@ -25,7 +25,6 @@ class PengacaraController extends Controller
     }
 
     public function insertpengacara(Request $request){
-        $pengacara = new Pengacara;
 
         Pengacara::create($request->all());
 

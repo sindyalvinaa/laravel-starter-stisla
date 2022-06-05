@@ -45,16 +45,16 @@
                         <tr>
                             <th scope="row">{{ $index + $data->firstItem() }}</th>
                             <td class="text-center">
-                                <img src="{{ asset('assets/img/'.$pengacara->foto) }}" alt="" class="img-fluid w-75 " class="mb-3 mt-3 ">
+                                <img src="{{ asset('assets/img/'.$row->foto) }}" alt="" style="width:45%; height: 100px" class="mb-3 mt-3 ">
                             </td>
                             <td class="text-center">{{ $row->nama_pengacara }}</td>
                             <td class="text-center">{{$row->kategori}}</td>
                             <td class="text-center">{{$row->profil}}</td>
                             <td class="text-center">{{$row->created_at}}</td>
                             <td class="text-center">
-                                <a href="/tampildata/{{ $row->id }}" class="btn btn-primary d-flex justify-content-center">Edit</a>
-                                <a href="/delete/{{ $row->id }}" class="btn btn-danger d-flex justify-content-center">Delete</a>
-                                <button type="button" class="btn btn-warning d-flex justify-content-center">Detail</button>
+                                <a href="/tampildata/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Edit</a>
+                                <a href="/delete/{{ $row->id }}" class="btn btn-sm btn-danger btn-icon"><i class="fas fa-times"></i>Delete</a>
+                                <button type="button" class="btn btn-sm btn-warning btn-icon"><i class="fas"></i>Detail</button>
 
                             </td>
                         </tr>
