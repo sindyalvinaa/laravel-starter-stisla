@@ -45,7 +45,7 @@
                         <tr>
                             <th scope="row">{{ $index + $data->firstItem() }}</th>
                             <td class="text-center">
-                                <img src="{{ asset('assets/img/'.$row->foto) }}" alt="" style="width:45%; height: 100px" class="mb-3 mt-3 ">
+                                <img src="{{ asset('assets/img/'.$row->foto) }}" alt="" style="width:80px; height: 100px" class="mb-3 mt-3 ">
                             </td>
                             <td class="text-center">{{ $row->nama_pengacara }}</td>
                             <td class="text-center">{{$row->kategori}}</td>
