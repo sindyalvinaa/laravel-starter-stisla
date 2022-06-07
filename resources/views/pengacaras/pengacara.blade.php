@@ -52,8 +52,8 @@
                             <td class="text-center">{{$row->profil}}</td>
                             <td class="text-center">{{$row->created_at}}</td>
                             <td class="text-center">
-                                <a href="/tampildata/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Edit</a>
-                                <a href="/delete/{{ $row->id }}" class="btn btn-sm btn-danger btn-icon"><i class="fas fa-times"></i>Delete</a>
+                                <a href="/Pengacara-Management/tampildata/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Edit</a>
+                                <a href="/Pengacara-Management/delete/{{ $row->id }}" class="btn btn-sm btn-danger btn-icon"><i class="fas fa-times"></i>Delete</a>
                                 <button type="button" class="btn btn-sm btn-warning btn-icon"><i class="fas"></i>Detail</button>
 
                             </td>

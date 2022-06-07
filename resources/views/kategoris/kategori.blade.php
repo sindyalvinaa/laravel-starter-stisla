@@ -54,8 +54,8 @@
                             <td class="text-center">{{ $row->kategori }}</td>
                             <td class="text-center">{{ $row->keterangan }}</td>
                             <td>
-                                <a href="/tampilKategori/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Edit</a>
-                                <a href="/delete/{{ $row->id }}" class="btn btn-sm btn-danger btn-icon"><i class="fas fa-times"></i>Delete</a>
+                                <a href="/Kategori-Management/tampilKategori/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Edit</a>
+                                <a href="/Kategori-Management/delete/{{ $row->id }}" class="btn btn-sm btn-danger btn-icon"><i class="fas fa-times"></i>Delete</a>
                             </td>
                         </tr>
                         @endforeach

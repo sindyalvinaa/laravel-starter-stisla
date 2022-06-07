@@ -76,18 +76,14 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::get('assing-user/{user}/edit', [AssignUserToRoleController::class, 'edit'])->name('assign.user.edit');
         Route::put('assign-user/{user}', [AssignUserToRoleController::class, 'update'])->name('assign.user.update');
     });
-    Route::get('/pengacara',[PengacaraController::class, 'pengacara'])->name('pengacara');
-
-    Route::get('/tambahpengacara',[PengacaraController::class, 'tambahpengacara'])->name('tambahpengacara');
-
-    Route::post('/insertpengacara',[PengacaraController::class, 'insertpengacara'])->name('insertpengacara');
-
-    Route::get('/tampildata/{id}',[PengacaraController::class, 'tampildata'])->name('tampildata');
-
-    Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
-
-    Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
-    
+        Route::prefix('Pengacara-Management')-> group(function() {
+        Route::get('/pengacara',[PengacaraController::class, 'pengacara'])->name('pengacara');
+        Route::get('/tambahpengacara',[PengacaraController::class, 'tambahpengacara'])->name('tambahpengacara');
+        Route::post('/insertpengacara',[PengacaraController::class, 'insertpengacara'])->name('insertpengacara');
+        Route::get('/tampildata/{id}',[PengacaraController::class, 'tampildata'])->name('tampildata');
+        Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
+        Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
+        });
     Route::prefix('Kategori-Management')-> group(function() {
         Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
         Route::get('/tambahKategori',[KategoriController::class, 'tambahKategori'])->name('tambahKategori');
