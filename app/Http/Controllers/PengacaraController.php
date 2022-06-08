@@ -15,7 +15,6 @@ class PengacaraController extends Controller
             $data = Pengacara::paginate(5);
         }
 
-        $data = Pengacara::paginate(5);
         return view('pengacaras.pengacara' ,compact('data'));
     }
 

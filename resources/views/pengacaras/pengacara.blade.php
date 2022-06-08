@@ -10,11 +10,11 @@
             </div>
         </div>
         <div class="section-body">
-            <a href="/tambahpengacara" class="btn btn-success mb-2">Tambah Data Pengacara</a>
+            <a href="/Pengacara-Management/tambahpengacara" class="btn btn-success mb-2">Tambah Data Pengacara</a>
 
             <div class="row g-3 align-items-center mt-1 mb-2">
                 <div class="col-auto">
-                    <form action="/pengacara" method="GET">
+                    <form action="/Pengacara-Management/pengacara" method="GET">
                     <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelp">
                 </form>
                 </div>
