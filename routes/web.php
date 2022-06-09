@@ -83,6 +83,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::get('/tampildata/{id}',[PengacaraController::class, 'tampildata'])->name('tampildata');
         Route::post('/updatedata/{id}',[PengacaraController::class, 'updatedata'])->name('updatedata');
         Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
+        Route::get('/detail/{id}',[PengacaraController::class, 'detail'])->name('detail');
         });
     Route::prefix('Kategori-Management')-> group(function() {
         Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
