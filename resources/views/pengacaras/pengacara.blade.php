@@ -54,7 +54,8 @@
                             <td class="text-center">
                                 <a href="/Pengacara-Management/tampildata/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Edit</a>
                                 <a href="/Pengacara-Management/delete/{{ $row->id }}" class="btn btn-sm btn-danger btn-icon"><i class="fas fa-times"></i>Delete</a>
-                                <button type="button" class="btn btn-sm btn-warning btn-icon"><i class="fas"></i>Detail</button>
+                                <a href="/Pengacara-Management/detail/{{ $row->id }}" class="btn btn-sm btn-warning btn-icon"><i class="fas fa-edit"></i>Detail</a>
+                                {{-- <button type="button" class="btn btn-sm btn-warning btn-icon"><i class="fas"></i>Detail</button> --}}
 
                             </td>
                         </tr>
