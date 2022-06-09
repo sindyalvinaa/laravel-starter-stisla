@@ -38,6 +38,10 @@ class PengacaraController extends Controller
         $data = Pengacara::find($id);
         return view('pengacaras.tampildata', compact('data'));
     }
+    public function detail($id){
+        $data = Pengacara::find($id);
+        return view('pengacaras.detail', compact('data'));
+    }
 
     public function updatedata(Request $request, $id){
         $data = Pengacara::find($id);
@@ -56,3 +60,4 @@ class PengacaraController extends Controller
         return redirect()->route('pengacara')->with('success', 'Data Pengacara Berhasil Di Hapus');
     }
 }
+
