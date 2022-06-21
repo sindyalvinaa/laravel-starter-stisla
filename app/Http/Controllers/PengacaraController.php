@@ -38,9 +38,10 @@ class PengacaraController extends Controller
         $data = Pengacara::find($id);
         return view('pengacaras.tampildata', compact('data'));
     }
+    
     public function detail($id){
-        $data = Pengacara::find($id);
-        return view('pengacaras.detail', compact('data'));
+        $pengacara = Pengacara::find($id);
+        return view('pengacaras.detail')->with('pengacara',$pengacara);
     }
 
     public function updatedata(Request $request, $id){
