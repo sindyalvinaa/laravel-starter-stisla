@@ -59,6 +59,9 @@
                 <tr>
                     <td>{{$kategori->kategori}}</td>
                     <td>{{$kategori->keterangan}}</td>
+                    <td>
+                        <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-warning btn-icon"><i class="fas fa-edit"></i>View Pengacara</a>
+                    </td>
                 </tr>
             @endforeach
           </tbody>
