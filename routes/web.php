@@ -5,6 +5,7 @@ use App\Http\Controllers\Menu\MenuGroupController;
 use App\Http\Controllers\Menu\MenuItemController;
 use App\Http\Controllers\PengacaraController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
@@ -18,6 +19,7 @@ use App\Models\User;
 use App\Models\Pengacara;
 use App\Models\Kategori;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,11 +88,16 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::get('/detail/{id}',[PengacaraController::class, 'detail'])->name('detail');
         });
     Route::prefix('Kategori-Management')-> group(function() {
-        Route::get('/kategori',[KategoriController::class, 'kategori'])->name('kategori');
+        Route::get('/kategori',[KategoriController::class, 'index'])->name('kategori');
         Route::get('/tambahKategori',[KategoriController::class, 'tambahKategori'])->name('tambahKategori');
         Route::get('/tampilKategori/{id}',[KategoriController::class, 'tampilKategori'])->name('tampilKategori');
         Route::post('/insertKategori',[KategoriController::class, 'insertKategori'])->name('insertKategori');
         Route::post('/updateKategori/{id}',[KategoriController::class, 'updateKategori'])->name('updateKategori');
         Route::get('/delete/{id}',[KategoriController::class, 'delete'])->name('delete');
     });
+    Route::get('/dashboardUser',function(){
+        return view('user.index');
+    });
+    Route::get('/kategoriUser',[KategoriUserController::class, 'index'])->name('kategoriUser');
+
 });
