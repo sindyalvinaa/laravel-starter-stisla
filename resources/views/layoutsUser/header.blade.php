@@ -17,7 +17,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link disabled">Data Diri</a>
+            <a class="nav-link disabled">Profil Saya</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
