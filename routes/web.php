@@ -5,6 +5,7 @@ use App\Http\Controllers\Menu\MenuGroupController;
 use App\Http\Controllers\Menu\MenuItemController;
 use App\Http\Controllers\PengacaraController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\DatadiriController;
 use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Models\Pengacara;
 use App\Models\Kategori;
+use App\Models\Datadiri;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\DB;
 
@@ -78,6 +80,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::get('assing-user/{user}/edit', [AssignUserToRoleController::class, 'edit'])->name('assign.user.edit');
         Route::put('assign-user/{user}', [AssignUserToRoleController::class, 'update'])->name('assign.user.update');
     });
+
         Route::prefix('Pengacara-Management')-> group(function() {
         Route::get('/pengacara',[PengacaraController::class, 'pengacara'])->name('pengacara');
         Route::get('/tambahpengacara',[PengacaraController::class, 'tambahpengacara'])->name('tambahpengacara');
@@ -87,6 +90,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::get('/delete/{id}',[PengacaraController::class, 'delete'])->name('delete');
         Route::get('/detail/{id}',[PengacaraController::class, 'detail'])->name('detail');
         });
+
     Route::prefix('Kategori-Management')-> group(function() {
         Route::get('/kategori',[KategoriController::class, 'index'])->name('kategori');
         Route::get('/tambahKategori',[KategoriController::class, 'tambahKategori'])->name('tambahKategori');
@@ -95,6 +99,16 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::post('/updateKategori/{id}',[KategoriController::class, 'updateKategori'])->name('updateKategori');
         Route::get('/delete/{id}',[KategoriController::class, 'delete'])->name('delete');
     });
+
+    Route::prefix('Datadiri-Management')-> group(function() {
+        Route::get('/datadiri',[DatadiriController::class, 'datadiri'])->name('datadiri');
+        Route::get('/tambahdatadiri',[DatadiriController::class, 'tambahdatadiri'])->name('tambahdatadiri');
+        Route::post('/insertdatadiri',[DatadiriController::class, 'insertdatadiri'])->name('insertdatadiri');
+        Route::get('/tampildata/{id}',[DatadiriController::class, 'tampildata'])->name('tampildata');
+        Route::post('/updatedata/{id}',[DatadiriController::class, 'updatedata'])->name('updatedata');
+        Route::get('/delete/{id}',[DatadiriController::class, 'delete'])->name('delete');
+        });
+
     Route::get('/dashboardUser',function(){
         return view('user.index');
     });
