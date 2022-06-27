@@ -6,6 +6,7 @@ use App\Http\Controllers\Menu\MenuItemController;
 use App\Http\Controllers\PengacaraController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\DatadiriController;
+use App\Http\Controllers\KonsultasiController;
 use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
@@ -20,6 +21,7 @@ use App\Models\User;
 use App\Models\Pengacara;
 use App\Models\Kategori;
 use App\Models\Datadiri;
+use App\Models\Konsultasi;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\DB;
 
@@ -108,6 +110,22 @@ Route::group(['middleware' => ['auth','verified']], function () {
         Route::post('/updatedata/{id}',[DatadiriController::class, 'updatedata'])->name('updatedata');
         Route::get('/delete/{id}',[DatadiriController::class, 'delete'])->name('delete');
         });
+
+        Route::prefix('Konsultasi-Management')-> group(function() {
+            // Route::get('/konsultasi', '\App\Http\Controllers\KonsultasiController@konsultasi');
+            // Route::get('/tambahkonsultasi', '\App\Http\Controllers\KonsultasiController@tambahkonsultasi');
+            // Route::get('/insertkonsultasi', '\App\Http\Controllers\KonsultasiController@insertkonsultasi');
+            // Route::get('/tampildata', '\App\Http\Controllers\KonsultasiController@tampildata');
+            // Route::get('/updatedata', '\App\Http\Controllers\KonsultasiController@updatedata');
+            // Route::get('/delete', '\App\Http\Controllers\KonsultasiController@delete');
+
+            Route::get('/konsultasi',[KonsultasiController::class, 'konsultasi'])->name('konsultasi');
+            Route::get('/tambahkonsultasi',[KonsultasiController::class, 'tambahkonsultasi'])->name('tambahkonsultasi');
+            Route::post('/insertkonsultasi',[KonsultasiController::class, 'insertkonsultasi'])->name('insertkonsultasi');
+            Route::get('/tampildata/{id}',[KonsultasiController::class, 'tampildata'])->name('tampildata');
+            Route::post('/updatedata/{id}',[KonsultasiController::class, 'updatedata'])->name('updatedata');
+            Route::get('/delete/{id}',[KonsultasiController::class, 'delete'])->name('delete');
+            });
 
     Route::get('/dashboardUser',function(){
         return view('user.index');
