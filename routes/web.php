@@ -8,6 +8,7 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\DatadiriController;
 use App\Http\Controllers\KonsultasiController;
 use App\Http\Controllers\PerizinanController;
+use App\Http\Controllers\KontrakController;
 use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
@@ -24,6 +25,7 @@ use App\Models\Kategori;
 use App\Models\Datadiri;
 use App\Models\Konsultasi;
 use App\Models\Perizinan;
+use App\Models\Kontrak;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\DB;
 
@@ -130,6 +132,15 @@ Route::group(['middleware' => ['auth','verified']], function () {
                 Route::post('/updatedata/{id}',[PerizinanController::class, 'updatedata'])->name('updatedata');
                 Route::get('/delete/{id}',[PerizinanController::class, 'delete'])->name('delete');
                 });
+
+                Route::prefix('Kontrak-Management')-> group(function() {
+                    Route::get('/kontrak',[KontrakController::class, 'kontrak'])->name('kontrak');
+                    Route::get('/tambahkontrak',[KontrakController::class, 'tambahkontrak'])->name('tambahkontrak');
+                    Route::post('/insertkontrak',[KontrakController::class, 'insertkontrak'])->name('insertkontrak');
+                    Route::get('/tampildata/{id}',[KontrakController::class, 'tampildata'])->name('tampildata');
+                    Route::post('/updatedata/{id}',[KontrakController::class, 'updatedata'])->name('updatedata');
+                    Route::get('/delete/{id}',[KontrakController::class, 'delete'])->name('delete');
+                    });
 
     Route::get('/dashboardUser',function(){
         return view('user.index');
