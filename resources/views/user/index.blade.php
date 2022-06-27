@@ -97,28 +97,28 @@
         <img src="/assets/Lawyer.jpg" alt="" style="width:300px; height: 250px" class="mb-3 mt-3 ">
         <p class="lead">.</p>
 
-    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Penyelesaian Perkara</a>
+    <a class="btn btn-lg btn-primary" href="/perkara" role="button">Penyelesaian Perkara</a>
     <p class="lead">Layanan bantuan hukum untuk semua permasalahan.</p>
 </div>
 </main>
 
 <main class="container">
 <div class="bg-light p-5 rounded">
-    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Konsultasi Hukum</a>
+    <a class="btn btn-lg btn-primary" href="/Konsultasi-Management/konsultasi" role="button">Konsultasi Hukum</a>
     <p class="lead">Konsultasi hukum untuk semua permasalahan.</p>
   </div>
 </main>
 
     <main class="container">
     <div class="bg-light p-5 rounded">
-        <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Pembuatan Perizinan</a>
+        <a class="btn btn-lg btn-primary" href="/Perizinan-Management/perizinan" role="button">Pembuatan Perizinan</a>
         <p class="lead">Layanan untuk pembuatan perizinan.</p>
       </div>
     </main>
 
     <main class="container">
         <div class="bg-light p-5 rounded">
-            <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Pembuatan Kontrak</a>
+            <a class="btn btn-lg btn-primary" href="/Kontrak-Management/kontrak" role="button">Pembuatan Kontrak</a>
             <p class="lead">Layanan untuk pembuatan kontrak.</p>
         </div>
         </main>
