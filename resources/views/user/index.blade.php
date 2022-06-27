@@ -9,12 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.98.0">
-    <title>Fixed top navbar example · Bootstrap v5.2</title>
+    <title>Dashboard User</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbar-fixed/">
-
-
-
 
 
 <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -94,11 +91,37 @@
 
 <main class="container">
   <div class="bg-light p-5 rounded">
-    <h1>Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">View navbar docs &raquo;</a>
+    <h1>In Law</h1>
+    <p class="lead">Layanan bantuan hukum untuk semua permasalahan.</p>
+    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Penyelesaian Perkara</a>
   </div>
 </main>
+
+<main class="container">
+<div class="bg-light p-5 rounded">
+    <h1>In Law</h1>
+    <p class="lead">Konsultasi hukum untuk semua permasalahan.</p>
+    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Konsultasi Hukum</a>
+  </div>
+</main>
+
+    <main class="container">
+    <div class="bg-light p-5 rounded">
+        <h1>In Law</h1>
+        <p class="lead">Layanan untuk pembuatan perizinan.</p>
+        <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Pembuatan Perizinan</a>
+      </div>
+    </main>
+
+    <main class="container">
+        <div class="bg-light p-5 rounded">
+            <h1>In Law</h1>
+            <p class="lead">Layanan untuk pembuatan kontrak.</p>
+            <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Pembuatan Kontrak</a>
+          </div>
+        </main>
+
+
 
 
     <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
