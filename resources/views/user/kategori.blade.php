@@ -49,8 +49,9 @@
         <table class="table table-striped table-hover table-condensed">
           <thead>
             <tr>
-              <th><strong>Kategori</strong></th>
-              <th><strong>Keterangan</strong></th>
+              <th class="text-center"><strong>Kategori</strong></th>
+              <th class="text-center"><strong>Keterangan</strong></th>
+              <th class="text-center"><strong>Aksi</strong></th>
 
             </tr>
           </thead>
@@ -60,7 +61,7 @@
                     <td>{{$kategori->kategori}}</td>
                     <td>{{$kategori->keterangan}}</td>
                     <td>
-                        <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-warning btn-icon"><i class="fas fa-edit"></i>View Pengacara</a>
+                        <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-warning btn-icon">View Pengacara</a>
                     </td>
                 </tr>
             @endforeach
