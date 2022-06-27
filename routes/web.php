@@ -10,6 +10,7 @@ use App\Http\Controllers\KonsultasiController;
 use App\Http\Controllers\PerizinanController;
 use App\Http\Controllers\KontrakController;
 use App\Http\Controllers\KategoriUserController;
+use App\Http\Controllers\PerkaraController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
@@ -26,6 +27,7 @@ use App\Models\Datadiri;
 use App\Models\Konsultasi;
 use App\Models\Perizinan;
 use App\Models\Kontrak;
+use App\Models\Perkara;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\DB;
 
@@ -147,4 +149,5 @@ Route::group(['middleware' => ['auth','verified']], function () {
     });
     Route::get('/kategoriUser',[KategoriUserController::class, 'index'])->name('kategoriUser');
 
+    Route::get('/perkara',[PerkaraController::class, 'perkara'])->name('perkara');
 });
