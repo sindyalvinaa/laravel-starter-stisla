@@ -166,6 +166,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/kategoriUser',[KategoriUserController::class, 'index'])->name('kategoriUser');
     Route::get('/galleryPidana',[GalleryPidanaController::class, 'index'])->name('galleryPidana');
     Route::get('/galleryPerdata',[GalleryPerdataController::class, 'index'])->name('galleryPerdata');
+    Route::get('/detailsPengacara/{id}',[PengacaraController::class, 'index']);
 
     Route::get('/perkara',[PerkaraController::class, 'perkara'])->name('perkara');
     Route::get('/webinar',[WebinarController::class, 'webinar'])->name('webinar');
