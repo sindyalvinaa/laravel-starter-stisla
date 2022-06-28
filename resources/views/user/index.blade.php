@@ -97,7 +97,7 @@
     {{-- <p class="lead">.</p> --}}
 
     <main class="container">
-        <div class="bg-light p-5 rounded">
+        <div class="p-5 rounded">
             {{-- <right> <h2>In Law</h2></right> --}}
     {{-- <a class="btn btn-lg btn-primary" href="/perkara" role="button">Penyelesaian Perkara</a>
     <i class="bi bi-people"></i>
@@ -124,77 +124,105 @@
             <div class="media flex-column flex-sm-row mt-0 mb-3">
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
-                        <a href="#" data-abc="true">
-                            <img src="{{ asset('assets/img/pengacara2.jpg') }}" class="img-fluid img-preview rounded" alt="">
-
+                        <a href="/perkara" data-abc="true">
+                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
-                    </div>
-                </div>
-
-                <div class="media-body">
-                    <h6 class="media-title"><a href="#" data-abc="true">Pengacara Viral Hotman Paris</a></h6>
-                                        <ul class="list-inline list-inline-dotted text-muted mb-2">
-                                            <li class="list-inline-item"><i class="fa fa-video-camera mr-2"></i> Video tutorials</li>
-                                        </ul>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                 </div>
             </div>
+
+            <main class="container">
+                <div class="bg-light p-2 mt-2 mb-2">
+                    <a class="btn btn-lg btn-primary" href="/perkara" role="button">Penyelesaian Perkara</a>
+                    <p class="bi bi-people">Layanan Bantuan untuk semua permasalahan.</p>
+                </div>
+            </main>
+
+            </div>
+        <div class="media flex-column flex-sm-row mt-0 mb-3">
+            <div class="mr-sm-3 mb-2 mb-sm-0">
+                <div class="card-img-actions">
+                    <a href="/Konsultasi-Management/konsultasi" data-abc="true">
+                        <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <main class="container">
+                <div class="bg-light p-2 rounded mt-2 mb-2">
+                    <a class="btn btn-lg btn-primary" href="/Konsultasi-Management/konsultasi" role="button">Konsultasi Hukum</a>
+                    <p class="bi bi-people">Konsultasi hukum untuk semua permasalahan.</p>
+                </div>
+            </main>
+        </div>
+
+    </div>
+        <div class="col-xl-6">
             <div class="media flex-column flex-sm-row mt-0 mb-3">
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
-                        <a href="#" data-abc="true">
+                        <a href="/Perizinan-Management/perizinan" data-abc="true">
                             <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
 
-                <div class="media-body">
-                        <h6 class="media-title"><a href="#" data-abc="true">Pengacara Handal</a></h6>
-                                <ul class="list-inline list-inline-dotted text-muted mb-2">
-                                    <li class="list-inline-item"><i class="fa fa-video-camera mr-2"></i> Video tutorials</li>
-                                </ul>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                </div>
+                <main class="container">
+                    <div class="bg-light p-2 rounded mt-2 mb-2">
+                        <a class="btn btn-lg btn-primary" href="/Perizinan-Management/perizinan" role="button">Pembuatan Perizinan</a>
+                        <p class="bi bi-people">Layanan untuk pembuatan perizinan.</p>
+                    </div>
+                </main>
             </div>
 
+            <div class="media flex-column flex-sm-row mt-0 mb-3">
+                <div class="mr-sm-3 mb-2 mb-sm-0">
+                    <div class="card-img-actions">
+                        <a href="/Kontrak-Management/kontrak" data-abc="true">
+                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <main class="container">
+                    <div class="bg-light p-2 rounded mt-2 mb-2">
+                        <a class="btn btn-lg btn-primary" href="/Kontrak-Management/kontrak" role="button">Pembuatan Kontrak</a>
+                        <p class="bi bi-people">Layanan untuk pembuatan kontrak.</p>
+                    </div>
+                    </main>
+            </div>
         </div>
 
         <div class="col-xl-6">
             <div class="media flex-column flex-sm-row mt-0 mb-3">
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
-                        <a href="#" data-abc="true">
-                            <img src="https://i.imgur.com/4Iu9qtM.jpg" class="img-fluid img-preview rounded" alt="">
+                        <a href="/Perizinan-Management/perizinan" data-abc="true">
+                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
 
-                <div class="media-body">
-                    <h6 class="media-title"><a href="#" data-abc="true">React Native 2nd Editions</a></h6>
-                                        <ul class="list-inline list-inline-dotted text-muted mb-2">
-                                            <li class="list-inline-item"><i class="fa fa-video-camera mr-2"></i> Video tutorials</li>
-                                        </ul>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                </div>
+                <main class="container">
+                    <div class="bg-light p-2 rounded mt-2 mb-2">
+                        <a class="btn btn-lg btn-primary" href="/Perizinan-Management/perizinan" role="button">Pembuatan Perizinan</a>
+                        <p class="bi bi-people">Layanan untuk pembuatan perizinan.</p>
+                    </div>
+                </main>
             </div>
-
             <div class="media flex-column flex-sm-row mt-0 mb-3">
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
-                        <a href="#" data-abc="true">
-                            <img src="https://i.imgur.com/8pHTmIb.jpg" class="img-fluid img-preview rounded" alt="">
-
+                        <a href="/webinar" data-abc="true">
+                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
-
-                <div class="media-body">
-                    <h6 class="media-title"><a href="#" data-abc="true">Python Architect 3rd Edition</a></h6>
-                                        <ul class="list-inline list-inline-dotted text-muted mb-2">
-                                            <li class="list-inline-item"><i class="fa fa-question-circle mr-2"></i> FAQ section</li>
-                                        </ul>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                </div>
+                <main class="container">
+                    <div class="bg-light p-2 rounded mt-2 mb-2">
+                        <a class="btn btn-lg btn-primary" href="/webinar" role="button">Webinar & Siaran Langsung</a>
+                        <p class="bi bi-people">Diskusi langsung dengan konsultan terpercaya.</p>
+                    </div>
+                </main>
             </div>
         </div>
     </div>
