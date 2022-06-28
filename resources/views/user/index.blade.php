@@ -82,6 +82,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{asset('frontDasboard/navbar-top-fixed.css')}} rel="stylesheet">
+    <link href="{{asset('frontDasboard/content.css')}} rel="stylesheet">
   </head>
   <body>
 
@@ -98,99 +99,110 @@
     <main class="container">
         <div class="bg-light p-5 rounded">
             {{-- <right> <h2>In Law</h2></right> --}}
-    <img src="/assets/Hukumpidana.jpg" alt="" style="width:1020px; height: 800px" align="center" class="mb-5 mt-5 ">
     {{-- <a class="btn btn-lg btn-primary" href="/perkara" role="button">Penyelesaian Perkara</a>
     <i class="bi bi-people"></i>
     <p class="bi bi-people">Layanan bantuan hukum untuk semua permasalahan.</p> --}}
 </div>
 </main>
 
-<main class="container">
-    <div class="bg-light p-5 rounded">
-        <a class="btn btn-lg btn-primary" href="/Konsultasi-Management/konsultasi" role="button">Penyelesaian Perkara</a>
-        <p class="bi bi-people">Layanan Bantuan untuk semua permasalahan.</p>
-      </div>
-    </main>
 
-<main class="container">
-<div class="bg-light p-5 rounded">
-    <a class="btn btn-lg btn-primary" href="/Konsultasi-Management/konsultasi" role="button">Konsultasi Hukum</a>
-    <p class="bi bi-people">Konsultasi hukum untuk semua permasalahan.</p>
-  </div>
-</main>
-
-    <main class="container">
-    <div class="bg-light p-5 rounded">
-        <a class="btn btn-lg btn-primary" href="/Perizinan-Management/perizinan" role="button">Pembuatan Perizinan</a>
-        <p class="bi bi-people">Layanan untuk pembuatan perizinan.</p>
-      </div>
-    </main>
-
-    <main class="container">
-        <div class="bg-light p-5 rounded">
-            <a class="btn btn-lg btn-primary" href="/Kontrak-Management/kontrak" role="button">Pembuatan Kontrak</a>
-            <p class="bi bi-people">Layanan untuk pembuatan kontrak.</p>
-        </div>
-        </main>
-
-        {{-- <main class="container">
-            <div class="bg-light p-5 rounded">
-                <a class="btn btn-lg btn-primary" href="" role="button">Pendidikan & Pelatihan</a>
-                <p class="bi bi-people">Edukasi bagi praktisi hukum, direksi, perusahaan dan masyarakat.</p>
-            </div>
-            </main> --}}
-
-            <main class="container">
-                <div class="bg-light p-5 rounded">
-                    <a class="btn btn-lg btn-primary" href="" role="button">Webinar & Siaran Langsung</a>
-                    <p class="bi bi-people">Diskusi langsung dengan konsultan terpercaya.</p>
-                </div>
-                </main>
-
-                <main class="container">
-                    <div class="bg-light p-5 rounded">
-                        <a class="btn btn-lg btn-primary" href="" role="button">Pembelian Buku</a>
-                        <p class="bi bi-people">Buku yang anda cari ada disini.</p>
-                    </div>
-                    </main>
-
-                    <main class="container">
-                        <div class="bg-light p-5 rounded">
-                            <img src="/assets/Lawyer.jpg" alt="" style="width:400px; height: 300px" align="center" class="mb-3 mt-3 ">
-                            <p class="bi bi-people">Mencegah selalu lebih murah, lebih hemat, dan lebih bijak dari pada mengobati.</p>
-                            <p class="bi bi-people">Lawyer yang tepat adalah investasi yang sangat menguntungkan.</p>
-                </div>
-            </main>
 
 
              {{-- <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; 2022 Company, In Lawyer.</p> --}}
 
     </div>
-  </footer>
 </div>
 
     <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, In Lawyer</p>
+        @section('footer')
+    @include('layoutsUser.footer')
+@show
+<div class="card-body pb-0">
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="media flex-column flex-sm-row mt-0 mb-3">
+                <div class="mr-sm-3 mb-2 mb-sm-0">
+                    <div class="card-img-actions">
+                        <a href="#" data-abc="true">
+                            <img src="{{ asset('assets/img/pengacara2.jpg') }}" class="img-fluid img-preview rounded" alt="">
 
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-    </a>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="media-body">
+                    <h6 class="media-title"><a href="#" data-abc="true">Pengacara Viral Hotman Paris</a></h6>
+                                        <ul class="list-inline list-inline-dotted text-muted mb-2">
+                                            <li class="list-inline-item"><i class="fa fa-video-camera mr-2"></i> Video tutorials</li>
+                                        </ul>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                </div>
+            </div>
+            <div class="media flex-column flex-sm-row mt-0 mb-3">
+                <div class="mr-sm-3 mb-2 mb-sm-0">
+                    <div class="card-img-actions">
+                        <a href="#" data-abc="true">
+                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                        </a>
+                    </div>
+                </div>
 
-    <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-    </ul>
-  </footer>
+                <div class="media-body">
+                        <h6 class="media-title"><a href="#" data-abc="true">Pengacara Handal</a></h6>
+                                <ul class="list-inline list-inline-dotted text-muted mb-2">
+                                    <li class="list-inline-item"><i class="fa fa-video-camera mr-2"></i> Video tutorials</li>
+                                </ul>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xl-6">
+            <div class="media flex-column flex-sm-row mt-0 mb-3">
+                <div class="mr-sm-3 mb-2 mb-sm-0">
+                    <div class="card-img-actions">
+                        <a href="#" data-abc="true">
+                            <img src="https://i.imgur.com/4Iu9qtM.jpg" class="img-fluid img-preview rounded" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="media-body">
+                    <h6 class="media-title"><a href="#" data-abc="true">React Native 2nd Editions</a></h6>
+                                        <ul class="list-inline list-inline-dotted text-muted mb-2">
+                                            <li class="list-inline-item"><i class="fa fa-video-camera mr-2"></i> Video tutorials</li>
+                                        </ul>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                </div>
+            </div>
+
+            <div class="media flex-column flex-sm-row mt-0 mb-3">
+                <div class="mr-sm-3 mb-2 mb-sm-0">
+                    <div class="card-img-actions">
+                        <a href="#" data-abc="true">
+                            <img src="https://i.imgur.com/8pHTmIb.jpg" class="img-fluid img-preview rounded" alt="">
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="media-body">
+                    <h6 class="media-title"><a href="#" data-abc="true">Python Architect 3rd Edition</a></h6>
+                                        <ul class="list-inline list-inline-dotted text-muted mb-2">
+                                            <li class="list-inline-item"><i class="fa fa-question-circle mr-2"></i> FAQ section</li>
+                                        </ul>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-  </footer>
+</div>
+
 </div>
 
   </body>
