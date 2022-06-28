@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">In Law</a>
+      <a class="navbar-brand" href="#">In Lawyer</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -13,12 +13,14 @@
             <a class="nav-link" href="/kategoriUser">Kategori</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Message</a>
-          </li>
-
-          <li class="nav-item">
             <a class="nav-link" href="/Datadiri-Management/datadiri">Profil Saya</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hubungi Kami</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+        </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

@@ -2,7 +2,7 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>Tambah Detail Perizinan</h1>
+            <h1>Detail Perizinan</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                 <div class="breadcrumb-item"><a href="#">Components</a></div>
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="section-body">
-            <a href="/Perizinan-Management/tambahperizinan" class="btn btn-success mb-2">Detail Perizinan</a>
+            <a href="/Perizinan-Management/tambahperizinan" class="btn btn-success mb-2">Tambah Detail Perizinan</a>
 
             <div class="row g-3 align-items-center mt-1 mb-2">
                 <div class="col-auto">

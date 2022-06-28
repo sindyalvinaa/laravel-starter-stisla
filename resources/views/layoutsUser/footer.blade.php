@@ -100,7 +100,7 @@
   </symbol>
 </svg>
 
-<div class="container">
+{{-- <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
 
@@ -116,9 +116,9 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
     </ul>
   </footer>
-</div>
+</div> --}}
 
-<div class="b-example-divider"></div>
+{{-- <div class="b-example-divider"></div>
 
 <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -135,9 +135,9 @@
       <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
     </ul>
   </footer>
-</div>
+</div> --}}
 
-<div class="b-example-divider"></div>
+{{-- <div class="b-example-divider"></div>
 
 <div class="container">
   <footer class="py-3 my-4">
@@ -148,26 +148,26 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
     </ul>
-    <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    <p class="text-center text-muted">&copy; 2022 InLaw</p>
   </footer>
-</div>
+</div> --}}
 
-<div class="b-example-divider"></div>
+{{-- <div class="b-example-divider"></div>
 
 <div class="container">
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
     <div class="col mb-3">
-      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+      {{-- <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      </a>
-      <p class="text-muted">&copy; 2022</p>
-    </div>
+      </a> --}}
+      {{-- <p class="text-muted">&copy; 2022</p> --}}
+    {{-- </div>
 
     <div class="col mb-3">
 
-    </div>
+    </div> --}}
 
-    <div class="col mb-3">
+    {{-- <div class="col mb-3">
       <h5>Section</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -198,14 +198,14 @@
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
       </ul>
-    </div>
-  </footer>
+    </div> --}}
+  {{-- </footer>
 </div>
 
-<div class="b-example-divider"></div>
+<div class="b-example-divider"></div> --}}
 
 
-<div class="container">
+{{-- <div class="container">
   <footer class="py-5">
     <div class="row">
       <div class="col-6 col-md-2 mb-3">
@@ -219,16 +219,7 @@
         </ul>
       </div>
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
+    C
 
       <div class="col-6 col-md-2 mb-3">
         <h5>Section</h5>
@@ -239,10 +230,10 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
         </ul>
-      </div>
+      </div> --}}
 
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
+      {{-- <div class="col-md-5 offset-md-1 mb-3"> --}}
+        {{-- <form>
           <h5>Subscribe to our newsletter</h5>
           <p>Monthly digest of what's new and exciting from us.</p>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
@@ -250,11 +241,11 @@
             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
             <button class="btn btn-primary" type="button">Subscribe</button>
           </div>
-        </form>
-      </div>
-    </div>
+        </form> --}}
+      {{-- </div>
+    </div> --}}
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    {{-- <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
       <p>&copy; 2022 Company, Inc. All rights reserved.</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
@@ -263,7 +254,7 @@
       </ul>
     </div>
   </footer>
-</div>
+</div> --}}
 
 
     <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

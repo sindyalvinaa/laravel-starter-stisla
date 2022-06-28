@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>KategoriUser</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
 
@@ -45,23 +45,23 @@
         </div>
       </div>
 
-      <div class="table-responsive">
-        <table class="table table-striped table-hover table-condensed">
+      {{-- <div class="table-responsive"> --}}
+        <table class="table table-striped">
+            
           <thead>
             <tr>
               <th class="text-center"><strong>Kategori</strong></th>
               <th class="text-center"><strong>Keterangan</strong></th>
               <th class="text-center"><strong>Aksi</strong></th>
-
             </tr>
           </thead>
           <tbody>
             @foreach($kategoris as $key => $kategori)
                 <tr>
-                    <td>{{$kategori->kategori}}</td>
-                    <td>{{$kategori->keterangan}}</td>
+                    <td class="text-center">{{$kategori->kategori}}</td>
+                    <td class="text-center">{{$kategori->keterangan}}</td>
                     <td>
-                        <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-warning btn-icon">View Pengacara</a>
+                        <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-warning btn-icon ">View Pengacara</a>
                     </td>
                 </tr>
             @endforeach
