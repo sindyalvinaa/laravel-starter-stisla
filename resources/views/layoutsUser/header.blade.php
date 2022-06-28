@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/dashboardUser">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/kategoriUser">Kategori</a>
@@ -18,13 +18,20 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Hubungi Kami</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
-        </li>
+
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex" >
+            <a href="/login" class="btn btn-outline-success me-3">Login</a>
+            <a href="/register" class="btn btn-outline-success">register</a>
+            <a href="{{ route('logout') }}"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                class="btn btn-outline-success">
+                <i class="btn btn-outline-success"></i> Logout
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                style="display: none;">
+                @csrf
+            </form>
         </form>
       </div>
     </div>
