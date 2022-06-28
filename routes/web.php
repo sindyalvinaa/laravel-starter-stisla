@@ -12,6 +12,7 @@ use App\Http\Controllers\KontrakController;
 use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\PerkaraController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\GalleryPerdataController;
 use App\Http\Controllers\GalleryPidanaController;
 use App\Http\Controllers\WebinarController;
@@ -164,8 +165,8 @@ Route::group(['middleware' => ['auth','verified']], function () {
         return view('user.index');
     });
     Route::get('/kategoriUser',[KategoriUserController::class, 'index'])->name('kategoriUser');
-    Route::get('/galleryPidana',[GalleryPidanaController::class, 'index'])->name('galleryPidana');
-    Route::get('/galleryPerdata',[GalleryPerdataController::class, 'index'])->name('galleryPerdata');
+    Route::get('/galleryPidana',[GalleryController::class, 'index'])->name('galleryPidana');
+    Route::get('/galleryPerdata',[GalleryController::class, 'perdata'])->name('galleryPerdata');
     Route::get('/detailsPengacara/{id}',[PengacaraController::class, 'index']);
 
     Route::get('/perkara',[PerkaraController::class, 'perkara'])->name('perkara');
