@@ -28,7 +28,7 @@ class KontrakController extends Controller
         // {
         //     $request->file('foto')->move('assets/img/', $request->file('foto')->getClientOriginalName());
         //     $data->foto = $request->file('foto')->getClientOriginalName();
-        //     $data->save();
+            // $data->save();
         // }
         $data->save();
         return redirect()->route('kontrak')->with('success', 'Data Kontrak Berhasil Di Tambahkan');
