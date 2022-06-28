@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Kategori;
 use App\Models\Pengacara;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PengacaraController extends Controller
 {
@@ -16,6 +17,10 @@ class PengacaraController extends Controller
         }
 
         return view('pengacaras.pengacara' ,compact('data'));
+    }
+    public function index($id){
+        $pidana = Pengacara::find($id);
+        return view('user.detailsPengacara', compact('pidana'));
     }
 
     public function tambahpengacara(){
@@ -38,7 +43,7 @@ class PengacaraController extends Controller
         $data = Pengacara::find($id);
         return view('pengacaras.tampildata', compact('data'));
     }
-    
+
     public function detail($id){
         $pengacara = Pengacara::find($id);
         return view('pengacaras.detail')->with('pengacara',$pengacara);
