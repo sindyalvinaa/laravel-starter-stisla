@@ -12,6 +12,8 @@ use App\Http\Controllers\KontrakController;
 use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\PerkaraController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\GalleryPerdataController;
+use App\Http\Controllers\GalleryPidanaController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
@@ -45,12 +47,13 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    return view('auth/login');
+    return view('user.index');
 });
 
 Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/dashboard', function () {
-        return view('home', ['users' => User::get(),]);
+        return auth()->user()->hasRole('super-admin')?view('home', ['users' => User::get(),])
+        :(auth()->user()->hasRole('user')?view ('user.index' ):back()) ;
     });
     //user list
 
@@ -159,6 +162,8 @@ Route::group(['middleware' => ['auth','verified']], function () {
         return view('user.index');
     });
     Route::get('/kategoriUser',[KategoriUserController::class, 'index'])->name('kategoriUser');
+    Route::get('/galleryPidana',[GalleryPidanaController::class, 'index'])->name('galleryPidana');
+    Route::get('/galleryPerdata',[GalleryPerdataController::class, 'index'])->name('galleryPerdata');
 
     Route::get('/perkara',[PerkaraController::class, 'perkara'])->name('perkara');
 });
