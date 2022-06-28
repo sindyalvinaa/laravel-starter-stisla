@@ -17,10 +17,10 @@ class CreatePengacarasTable extends Migration
             $table->id();
             $table->string('foto');
             $table->string('nama_pengacara');
-            $table->string('kategori');
+            $table->longText('kategori');
             $table->string('profil');
             $table->biginteger('telp');
-            $table->string('keterangan');
+            $table->longText('keterangan');
             $table->timestamps();
         });
     }
