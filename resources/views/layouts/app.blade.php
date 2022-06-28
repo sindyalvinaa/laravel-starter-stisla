@@ -99,6 +99,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                          <li class="nav-item">
+                            <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-white ml-3"><h6>Pengacara</h6></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="/Kategori-Management/kategori" class="btn btn-sm btn-white ml-3"><h6>Kategori</h6></a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="/dashboardUser" class="btn btn-sm btn-white ml-3"><h6>User Dashboard</h6></a>
+                          </li>
+                      </div>
                 </form>
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
