@@ -35,7 +35,7 @@
                                     <input type="text" name="profil" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                                   </div>
-                                  <div class="mb-3">
+                                  {{-- <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">No Telepon</label>
                                     <input type="text" name="telp" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
@@ -44,7 +44,7 @@
                                     <label for="exampleInputEmail1" class="form-label">Masukkan Keterangan</label>
                                     <input type="text" name="keterangan" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
-                                  </div>
+                                  </div> --}}
                                 <button type="submit" class="btn btn-primary">Submit</button>
                               </form>
                         </div>
