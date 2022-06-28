@@ -47,7 +47,7 @@
 
       {{-- <div class="table-responsive"> --}}
         <table class="table table-striped">
-            
+
           <thead>
             <tr>
               <th class="text-center"><strong>Kategori</strong></th>
@@ -60,9 +60,11 @@
                 <tr>
                     <td class="text-center">{{$kategori->kategori}}</td>
                     <td class="text-center">{{$kategori->keterangan}}</td>
-                    <td>
-                        <a href="/Pengacara-Management/pengacara" class="btn btn-sm btn-warning btn-icon ">View Pengacara</a>
-                    </td>
+                    @if ($loop->last)
+                        <td><button class="btn btn-primary btn-lg" type="button" onclick="window.location.href='/galleryPerdata'">Views Detail</button></td>
+                    @else
+                        <td><button class="btn btn-primary btn-lg" type="button" onclick="window.location.href='/galleryPidana'">Views Detail</button></td>
+                    @endif
                 </tr>
             @endforeach
           </tbody>
