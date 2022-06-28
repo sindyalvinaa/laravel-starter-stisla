@@ -54,7 +54,7 @@
             <th class="text-center">Nama</th>
             <th class="text-center">Kategori</th>
             <th class="text-center">Profil</th>
-            
+
             <th class="text-center">Aksi</th>
           </tr>
         </thead>
@@ -73,7 +73,7 @@
                 <td class="text-center">{{$row->profil}}</td>
 
                 <td class="text-center">
-                    <a href="/Pengacara-Management/tampildata/{{ $row->id }}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Details</a>
+                    <a href="{{url('detailsPengacara/'.$row->id)}}" class="btn btn-sm btn-primary btn-icon"><i class="fas fa-edit"></i>Details</a>
                     {{-- <button type="button" class="btn btn-sm btn-warning btn-icon"><i class="fas"></i>Detail</button> --}}
 
                 </td>
