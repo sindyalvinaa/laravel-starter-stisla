@@ -11,6 +11,7 @@ use App\Http\Controllers\PerizinanController;
 use App\Http\Controllers\KontrakController;
 use App\Http\Controllers\KategoriUserController;
 use App\Http\Controllers\PerkaraController;
+use App\Http\Controllers\BukuController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
@@ -28,6 +29,7 @@ use App\Models\Konsultasi;
 use App\Models\Perizinan;
 use App\Models\Kontrak;
 use App\Models\Perkara;
+use App\Models\Buku;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\DB;
 
@@ -143,6 +145,15 @@ Route::group(['middleware' => ['auth','verified']], function () {
                     Route::post('/updatedata/{id}',[KontrakController::class, 'updatedata'])->name('updatedata');
                     Route::get('/delete/{id}',[KontrakController::class, 'delete'])->name('delete');
                     });
+
+                    Route::prefix('Buku-Management')-> group(function() {
+                        Route::get('/buku',[BukuController::class, 'buku'])->name('buku');
+                        Route::get('/tambahbuku',[BukuController::class, 'tambahbuku'])->name('tambahbuku');
+                        Route::post('/insertbuku',[BukuController::class, 'insertbuku'])->name('insertbuku');
+                        Route::get('/tampildata/{id}',[BukuController::class, 'tampildata'])->name('tampildata');
+                        Route::post('/updatedata/{id}',[BukuController::class, 'updatedata'])->name('updatedata');
+                        Route::get('/delete/{id}',[BukuController::class, 'delete'])->name('delete');
+                        });
 
     Route::get('/dashboardUser',function(){
         return view('user.index');
