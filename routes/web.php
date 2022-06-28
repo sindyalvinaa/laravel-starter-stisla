@@ -14,6 +14,7 @@ use App\Http\Controllers\PerkaraController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\GalleryPerdataController;
 use App\Http\Controllers\GalleryPidanaController;
+use App\Http\Controllers\WebinarController;
 use App\Http\Controllers\RoleAndPermission\AssignPermissionController;
 use App\Http\Controllers\RoleAndPermission\AssignUserToRoleController;
 use App\Http\Controllers\RoleAndPermission\ExportPermissionController;
@@ -32,6 +33,7 @@ use App\Models\Perizinan;
 use App\Models\Kontrak;
 use App\Models\Perkara;
 use App\Models\Buku;
+use App\Models\Webinar;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\DB;
 
@@ -166,4 +168,5 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/galleryPerdata',[GalleryPerdataController::class, 'index'])->name('galleryPerdata');
 
     Route::get('/perkara',[PerkaraController::class, 'perkara'])->name('perkara');
+    Route::get('/webinar',[WebinarController::class, 'webinar'])->name('webinar');
 });
