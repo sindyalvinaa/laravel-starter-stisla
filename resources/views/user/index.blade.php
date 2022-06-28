@@ -24,6 +24,8 @@
 <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
 <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#712cf9">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 
     <style>
@@ -81,8 +83,11 @@
 
 
     <!-- Custom styles for this template -->
+
     <link href="{{asset('frontDasboard/navbar-top-fixed.css')}} rel="stylesheet">
     <link href="{{asset('frontDasboard/content.css')}} rel="stylesheet">
+    {{-- <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/components.css"> --}}
   </head>
   <body>
 
