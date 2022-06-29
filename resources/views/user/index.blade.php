@@ -130,7 +130,7 @@
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
                         <a href="/perkara" data-abc="true">
-                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                            <img src="{{ asset('assets/img/penyelesaian perkara.png') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                 </div>
             </div>
@@ -147,7 +147,7 @@
             <div class="mr-sm-3 mb-2 mb-sm-0">
                 <div class="card-img-actions">
                     <a href="/Konsultasi-Management/konsultasi" data-abc="true">
-                        <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                        <img src="{{ asset('assets/img/konsultasi_hukum.png') }}" class="img-fluid img-preview rounded" alt="">
                     </a>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
                         <a href="/Perizinan-Management/perizinan" data-abc="true">
-                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                            <img src="{{ asset('assets/img/Pembuatan Perizinan.png') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
                         <a href="/Kontrak-Management/kontrak" data-abc="true">
-                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                            <img src="{{ asset('assets/img/pembuatan_kontrak.png') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
@@ -202,14 +202,14 @@
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
                         <a href="/Perizinan-Management/perizinan" data-abc="true">
-                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                            <img src="{{ asset('assets/img/pembelian_buku.png') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
 
                 <main class="container">
                     <div class="bg-light p-2 rounded mt-2 mb-2">
-                        <a class="btn btn-lg btn-primary" href="/Perizinan-Management/perizinan" role="button">Pembuatan Perizinan</a>
+                        <a class="btn btn-lg btn-primary" href="/Buku-Management/buku" role="button">Pembelian Buku</a>
                         <p class="bi bi-people">Layanan untuk pembuatan perizinan.</p>
                     </div>
                 </main>
@@ -218,7 +218,7 @@
                 <div class="mr-sm-3 mb-2 mb-sm-0">
                     <div class="card-img-actions">
                         <a href="/webinar" data-abc="true">
-                            <img src="{{ asset('assets/img/pengacara4.jpg') }}" class="img-fluid img-preview rounded" alt="">
+                            <img src="{{ asset('assets/img/webinar_siaran.png') }}" class="img-fluid img-preview rounded" alt="">
                         </a>
                     </div>
                 </div>
