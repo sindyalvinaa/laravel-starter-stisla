@@ -36,13 +36,18 @@
                 <div class="row">
                     <div class="col-md-5 text-center">
                         <img class="img-thumbnail md-margin-bottom-10" src="{{asset('assets/img/'.$pidana->foto)}}" alt="">
+                        <br>
+                        <br>
+                        <a href="https://wa.me/{{ $pidana->telp }}" class="btn btn-sm btn-info btn-icon"><i class="fas fa-phone"></i> Hubungi Pengacara</a>
                     </div>
                     <div class="col-md-7">
                         <h2>{{$pidana->nama_pengacara}}</h2>
                         <span><strong>Kategori  :</strong>{{$pidana->kategori}}</span>
                         {{-- <span><strong>Position:</strong> Web Designer</span> --}}
                         <hr>
-                        <p>{{$pidana->profil}}</p>
+                        <p><strong>Profil  :</strong>{{$pidana->profil}}</p>
+                        <p><strong>Keterangan  :</strong>Keterangan : {{$pidana->keterangan}}</p>
+
                         {{-- <p>Proin mauris odio, pharetra quis ligula non, vulputate vehicula quam. Nunc in libero vitae nunc ultricies tincidunt ut sed leo. Sed luctus dui ut congue consequat. Cras consequat nisl ante, nec malesuada velit pellentesque ac. Pellentesque nec arcu in ipsum iaculis convallis.</p> --}}
                     </div>
                 </div>
