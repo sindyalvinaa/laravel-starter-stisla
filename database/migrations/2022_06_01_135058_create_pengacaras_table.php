@@ -17,8 +17,8 @@ class CreatePengacarasTable extends Migration
             $table->id();
             $table->string('foto');
             $table->string('nama_pengacara');
-            $table->longText('kategori');
-            $table->string('profil');
+            $table->string('kategori');
+            $table->longText('profil');
             $table->biginteger('telp');
             $table->longText('keterangan');
             $table->timestamps();
